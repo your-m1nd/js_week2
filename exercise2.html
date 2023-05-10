@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/css/style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -11,13 +12,15 @@
       <div class="title_holder">
         <h1 class="title">Cats</h1>
       </div>
-      <div class="img1_holder">
-        <img class="img1" src="assets/img_cat1.jpg" />
-        <button class="btn__left">Previous</button>
-      </div>
-      <div class="img2_holder">
-        <img class="img2" src="assets/img_cat2.jpg" />
-        <button class="btn__right">Next</button>
+      <div class="wrapper">
+        <div id="Img1_holder">
+          <img id="Img1" src="assets/img_cat1.jpg" alt="previous image" />
+          <button class="btn__left" onclick="showImg2()">Previous</button>
+        </div>
+        <div id="Img2_holder">
+          <img id="Img2" src="assets/img_cat2.jpg" alt="next image" />
+          <button class="btn__right" onclick="showImg1()">Next</button>
+        </div>
       </div>
     </div>
 
