@@ -11,7 +11,9 @@
 .wrapper {
   max-width: 1400px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 
@@ -19,7 +21,24 @@
   max-width: 300px;
 }
 
-#Img1_holder {
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn__left, .btn__right {
+  margin-top: 50px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  background-color: black;
+  color: white;
+}
+
+
+/*#Img1_holder {
   max-width: 600px;
   display: flex;
   flex-direction: column;
